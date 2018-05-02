@@ -1,8 +1,9 @@
 #ifndef _STUDENT_H
 #define _STUDENT_H_
 
-#include <stdlib.h>
-#include <string> // include to prevent compile errors. Won't recognize string.
+
+#include <iostream> // include to prevent compilation error with string undefined.
+                    // gives the string library.
 
 using namespace std;
 
@@ -11,10 +12,11 @@ class student
     private:
         string firstName;
         string lastName;
+        string completeName;
 
 
     public:
-        void setName(string fname, string lname);
+        void setName(string fName, string lName);
         string fullName();
 
 

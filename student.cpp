@@ -8,10 +8,11 @@ using namespace std;
 
 string student::fullName()
 {
-    firstName.append(" ");
-    firstName.append(lastName);
+    completeName.append(firstName);
+    completeName.append(" "); // inserts space
+    completeName.append(lastName);
 
-    return firstName;
+    return completeName;
 
 } // end fullName()
 
